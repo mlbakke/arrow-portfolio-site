@@ -1,0 +1,14 @@
+.navigation {
+
+    &__nav {
+    }
+
+    &__item {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    &__link {
+        text-decoration: none;
+    }
+}

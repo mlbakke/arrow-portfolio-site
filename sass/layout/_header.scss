@@ -1,0 +1,7 @@
+.header {
+    background-image: url(../../img/computers-coding.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    @include arrow-shape-bottom;
+}
