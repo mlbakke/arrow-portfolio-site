@@ -1,2 +1,6 @@
-.sass-cache/
-*.css.map
+#npm/sass
+node_modules/
+package-lock.json
+
+#div notes
+notes.txt
