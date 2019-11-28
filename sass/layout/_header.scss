@@ -1,9 +1,36 @@
 .header {
     background-image: linear-gradient(
-        to right top, rgba($color-overlay, .1), rgba($color-overlay, .4)),
+        to right top, rgba($color-overlay, .6), rgba($color-overlay, .9)),
         url(../../img/computers-coding.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    position: relative;
+    height: 90vh;
+    color: $color-text-light;
     @include arrow-shape-bottom;
+
+    &__heading-logo {
+        text-align: center;
+        text-shadow: 
+            0 1px 1px rgba($color-black, .4),
+            0 2px 2px rgba($color-black, .4);
+    }
+
+    &__intro {
+        text-shadow: 
+            0 1px 1px rgba($color-black, .4),
+            0 2px 2px rgba($color-black, .4);
+        text-align: center;
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+    &__buttons {
+        position: absolute;
+        top: 48vh;          /* finn bedre måte */
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        width: 30rem;
+    }
 }
