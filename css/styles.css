@@ -41,17 +41,20 @@ h1, h2, h3 {
   cursor: pointer; }
 
 .btn:active {
-  transform: translateY(-1px) scale(0.95); }
+  transform: translateY(-1px) scale(0.95);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1); }
 
 .btn--transparent, .btn--transparent:link, .btn--transparent:visited {
   color: rgba(234, 247, 253, 0.9);
   background: rgba(245, 245, 245, 0.05);
-  border: 2px solid rgba(245, 245, 245, 0.5); }
+  border: 2px solid rgba(245, 245, 245, 0.5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-.btn--transparent:hover, .btn--transparent:active {
-  color: #ff8b00;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+.btn--transparent:active {
   border: 2px solid rgba(255, 139, 0, 0.5); }
+
+.btn--transparent:hover {
+  color: #ff8b00; }
 
 .btn--git {
   margin-right: 7rem; }
@@ -68,15 +71,15 @@ h1, h2, h3 {
   margin-right: 2%;
   margin-top: 2rem; }
 
-.navigation__link {
+.navigation__link:link, .navigation__link:visited {
+  color: rgba(234, 247, 253, 0.8);
   list-style: none;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all .2s; }
-  .navigation__link:link, .navigation__link:visited {
-    color: rgba(234, 247, 253, 0.8); }
-  .navigation__link:hover {
-    color: #ff8b00; }
+
+.navigation__link:hover {
+  color: #ff8b00; }
 
 .header {
   background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding.jpg);
@@ -89,9 +92,16 @@ h1, h2, h3 {
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0); }
   .header__heading-logo {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4); }
+    .header__heading-logo::after {
+      content: "";
+      display: block;
+      width: 140%;
+      border-bottom: 3px solid rgba(255, 139, 0, 0.7);
+      border-radius: 50%;
+      transform: translate(-15%, 4rem); }
   .header__intro {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4);
-    margin: 5rem 0 3rem; }
+    margin: 7rem 0 3rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
