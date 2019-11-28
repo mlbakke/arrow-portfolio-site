@@ -13,6 +13,11 @@ html {
 body {
   box-sizing: border-box; }
 
+a,
+a:link,
+a:visited {
+  text-decoration: none; }
+
 body {
   font-family: 'Prata', serif;
   font-size: 1.6rem;
@@ -20,6 +25,11 @@ body {
 
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif; }
+
+.navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2rem;
+  text-transform: uppercase; }
 
 .heading-primary {
   font-size: 7rem;
@@ -63,15 +73,23 @@ h1, h2, h3 {
   font-size: 2rem;
   margin-right: .8rem; }
 
+.navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
+  float: left;
+  color: rgba(234, 247, 253, 0.8);
+  margin-top: 2rem;
+  margin-left: 3%; }
+  .navigation__logo-box:hover, .navigation__logo-box:link:hover, .navigation__logo-box:visited:hover {
+    color: #ff8b00; }
+
 .navigation__nav {
   text-align: right; }
 
 .navigation__item {
   display: inline-block;
-  margin-right: 2%;
+  margin-right: 3%;
   margin-top: 2rem; }
 
-.navigation__link:link, .navigation__link:visited {
+.navigation__link, .navigation__link:link, .navigation__link:visited {
   color: rgba(234, 247, 253, 0.8);
   list-style: none;
   text-decoration: none;

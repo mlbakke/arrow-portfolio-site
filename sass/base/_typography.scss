@@ -7,7 +7,17 @@ body {
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
-
+.navigation {
+    &__logo-box {
+        &,
+        &:link,
+        &:visited {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}
 .heading-primary {
     font-size: 7rem;
     letter-spacing: .5rem;

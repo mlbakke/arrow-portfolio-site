@@ -1,13 +1,26 @@
 .navigation {
+    &__logo-box {
+        &,
+        &:link,
+        &:visited {
+            float: left;
+            color: rgba($color-text-light, .8);
+            margin-top: 2rem;
+            margin-left: 3%;
+            @include hover-color-details;
+        }
+    }
+
     &__nav { text-align: right; }
 
     &__item {
         display: inline-block;
-        margin-right: 2%;
+        margin-right: 3%;
         margin-top: 2rem;
     }
     
     &__link {
+        &,
         &:link,
         &:visited {
             color: rgba($color-text-light, .8);
