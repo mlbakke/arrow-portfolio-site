@@ -74,10 +74,11 @@ h1, h2, h3 {
   margin-right: .8rem; }
 
 .navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
-  float: left;
-  color: rgba(234, 247, 253, 0.8);
-  margin-top: 2rem;
-  margin-left: 3%; }
+  display: inline-block;
+  position: absolute;
+  left: 3%;
+  top: 2rem;
+  color: rgba(234, 247, 253, 0.8); }
   .navigation__logo-box:hover, .navigation__logo-box:link:hover, .navigation__logo-box:visited:hover {
     color: #ff8b00; }
 

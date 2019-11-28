@@ -3,10 +3,11 @@
         &,
         &:link,
         &:visited {
-            float: left;
+            display: inline-block;
+            position: absolute;
+            left: 3%;
+            top: 2rem;
             color: rgba($color-text-light, .8);
-            margin-top: 2rem;
-            margin-left: 3%;
             @include hover-color-details;
         }
     }
