@@ -11,18 +11,15 @@
     }
     
     &__link {
-        list-style: none;
-        text-decoration: none;
-        text-shadow: 0 1px 1px rgba($color-black, .1);
-        transition: all .2s;
-
         &:link,
         &:visited {
             color: rgba($color-text-light, .8);
+            list-style: none;
+            text-decoration: none;
+            text-shadow: 0 1px 1px rgba($color-black, .1);
+            transition: all .2s;
         }
-
-        &:hover {
-            color: $color-details;
-        }
+        
+        @include hover-color-details;
     }
 }

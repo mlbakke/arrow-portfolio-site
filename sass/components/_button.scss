@@ -25,14 +25,13 @@
             color: rgba($color-text-light, .9);
             background: rgba($color-white, .05);
             border: 2px solid rgba($color-white, .5);
+            text-shadow: 0 1px 1px rgba($color-black, .2);
         }
 
-        &:hover,
         &:active {
-            color: $color-details;
-            text-shadow: 0 1px 1px rgba($color-black, .4);
             border: 2px solid rgba($color-details, .5);
         }
+        @include hover-color-details;
     }
 
     &--git {
