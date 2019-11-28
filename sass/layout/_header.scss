@@ -14,13 +14,22 @@
         text-shadow:
             0 1px 1px rgba($color-black, .4),
             0 2px 2px rgba($color-black, .4);
+
+        &::after {
+            content: "";
+            display: block;
+            width: 140%;
+            border-bottom: 3px solid rgba($color-details, .7);
+            border-radius: 50%;
+            transform: translate(-15%, 4rem);
+        }
     }
 
     &__intro {
         text-shadow: 
             0 1px 1px rgba($color-black, .4),
             0 2px 2px rgba($color-black, .4);
-        margin: 5rem 0 3rem;
+        margin: 7rem 0 3rem;
     }
 
     &__text-box {
