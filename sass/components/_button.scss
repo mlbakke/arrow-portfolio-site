@@ -1,38 +1,46 @@
 .btn {
-    display: inline-block;
-    width: 12rem;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 1rem;
-    @include box-shadow-layered;
-    transition: all .2s;
 
     &,
     &:link,
     &:visited {
+        display: inline-block;
+        padding: 1rem 3rem;
+        text-align: center;
+        border-radius: 1rem;
         text-decoration: none;
-        color: $color-text-light;
+        @include box-shadow-layered;
+        transition: all .2s;
+
+        //changes for <button> element:
+        border: none;
+        cursor: pointer;
     }
 
-    &:hover,
-    &:active {
-        color: $color-details;
-        text-shadow: 0 1px 1px rgba($color-black, .4);
-    }
-
-    &--white {
-        background: rgba($color-white, .75);
-    }
+    &:active{ @include press-in; }
 
     &--transparent {
-        background: rgba($color-white, .05);
-        border: 2px solid rgba($color-white, .75);
+        &,
+        &:link,
+        &:visited {
+            color: rgba($color-text-light, .9);
+            background: rgba($color-white, .05);
+            border: 2px solid rgba($color-white, .5);
+        }
+
+        &:hover,
+        &:active {
+            color: $color-details;
+            text-shadow: 0 1px 1px rgba($color-black, .4);
+            border: 2px solid rgba($color-details, .5);
+        }
     }
 
     &--git {
+        margin-right: 7rem;
     }
 
-    &--mail { float: right; }
-
-    & > i { font-size: 2rem; }
+    & > i { 
+        font-size: 2rem;
+        margin-right: .8rem;
+    }
 }

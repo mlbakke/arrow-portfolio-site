@@ -5,13 +5,13 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 90vh;
+    text-align: center;
+    height: 60vh;
     color: $color-text-light;
     @include arrow-shape-bottom;
 
     &__heading-logo {
-        text-align: center;
-        text-shadow: 
+        text-shadow:
             0 1px 1px rgba($color-black, .4),
             0 2px 2px rgba($color-black, .4);
     }
@@ -20,17 +20,13 @@
         text-shadow: 
             0 1px 1px rgba($color-black, .4),
             0 2px 2px rgba($color-black, .4);
-        text-align: center;
-        max-width: 70rem;
-        margin: 0 auto;
+        margin: 5rem 0 3rem;
     }
 
-    &__buttons {
+    &__text-box {
         position: absolute;
-        top: 48vh;          /* finn bedre måte */
+        top: 40%;
         left: 50%;
-        transform: translateX(-50%);
-        display: inline-block;
-        width: 30rem;
+        transform: translate(-50%, -50%);
     }
 }
