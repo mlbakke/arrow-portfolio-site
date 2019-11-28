@@ -1,5 +1,4 @@
 .btn {
-
     &,
     &:link,
     &:visited {
@@ -28,15 +27,11 @@
             text-shadow: 0 1px 1px rgba($color-black, .2);
         }
 
-        &:active {
-            border: 2px solid rgba($color-details, .5);
-        }
+        &:active { border: 2px solid rgba($color-details, .5); }
         @include hover-color-details;
     }
 
-    &--git {
-        margin-right: 7rem;
-    }
+    &--git { margin-right: 7rem; }
 
     & > i { 
         font-size: 2rem;
