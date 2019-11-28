@@ -11,7 +11,7 @@
     &:link,
     &:visited {
         text-decoration: none;
-        color: $color-text-dark;
+        color: $color-text-light;
     }
 
     &:hover,
@@ -24,11 +24,15 @@
         background: rgba($color-white, .75);
     }
 
+    &--transparent {
+        background: rgba($color-white, .05);
+        border: 2px solid rgba($color-white, .75);
+    }
+
     &--git {
     }
 
-    &--mail { float: right;
-    }
+    &--mail { float: right; }
 
     & > i { font-size: 2rem; }
 }

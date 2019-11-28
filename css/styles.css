@@ -43,12 +43,15 @@ h1, h2, h3 {
   transition: all .2s; }
   .btn, .btn:link, .btn:visited {
     text-decoration: none;
-    color: #030b0f; }
+    color: #eaf7fd; }
   .btn:hover, .btn:active {
     color: #ff8b00;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
   .btn--white {
     background: rgba(245, 245, 245, 0.75); }
+  .btn--transparent {
+    background: rgba(245, 245, 245, 0.05);
+    border: 2px solid rgba(245, 245, 245, 0.75); }
   .btn--mail {
     float: right; }
   .btn > i {
