@@ -1,8 +1,5 @@
 .navigation {
-
-    &__nav {
-        text-align: right;
-    }
+    &__nav { text-align: right; }
 
     &__item {
         display: inline-block;
@@ -19,7 +16,6 @@
             text-shadow: 0 1px 1px rgba($color-black, .1);
             transition: all .2s;
         }
-        
         @include hover-color-details;
     }
 }
