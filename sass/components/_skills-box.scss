@@ -1,0 +1,27 @@
+.skills-box {
+    text-align: center;
+
+    &__group {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        padding: 2rem 3rem;
+        border-radius: 4px;
+        transition: all .2s;
+        @include box-shadow;
+
+        &:not(:last-of-type) {
+            margin-right: 2%;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            @include box-shadow-big;
+        }
+    }
+
+    &__skill {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+}
