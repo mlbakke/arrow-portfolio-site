@@ -22,14 +22,14 @@
 <body>
     <header class="header">
         <div class="navigation">
-            <a href="#" class="navigation__logo-box">mlb</a>
+            <a href="#" class="navigation__logo-box u-margin-top-small">mlb</a>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a href="#" class="navigation__link">Portfolio</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Skills</a>
+                        <a href="#skills" class="navigation__link">Skills</a>
                     </li>
                     <li class="navigation__item">
                         <a href="#" class="navigation__link">About</a>
@@ -42,8 +42,8 @@
         </div>
 
         <div class="header__text-box">
-            <h1 class="header__heading-logo heading-primary">Martin Bakke</h1>
-            <p class="header__intro">
+            <h1 class="header__heading-logo heading-primary u-margin-bottom-big u-margin-top-med">Martin Bakke</h1>
+            <p class="header__intro u-margin-bottom-med">
                 Frontend developer.
             </p>
             <a href="#" class="btn btn--transparent btn--git">
@@ -53,22 +53,28 @@
         </div>
     </header>
     <main>
-        <section class="section-skills">
+        <section class="section-skills" id="skills">
+            <h2 class="heading-secondary u-center-text u-margin-bottom-med">Skills</h2>
             <div class="skills-box">
-                <h3 class="heading-tertiary">Languages</h3>
-                <p class="skills-box__skill">HTML5</p>
-                <p class="skills-box__skill">CSS3</p>
-                <p class="skills-box__skill">Sass / SCSS</p>
-                <p class="skills-box__skill">JavaScript</p>
-            </div>
-            <div class="skills-box">
-                <h3 class="heading-tertiary">Frameworks</h3>
-                <p class="skills-box__skill">BootStrap</p>
-            </div>
-            <div class="skills-box">
-                <h3 class="heading-tertiary">Tools</h3>
-                <p class="skills-box__skill">Git / GitHub</p>
-                <p class="skills-box__skill">npm</p>
+                <div class="skills-box__group">
+                    <img src="img/programming.png" alt="Languages icon" class="skills-box__illustration u-margin-bottom-small">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Languages</h3>
+                    <p class="skills-box__skill">HTML5</p>
+                    <p class="skills-box__skill">CSS3</p>
+                    <p class="skills-box__skill">Sass / SCSS</p>
+                    <p class="skills-box__skill">JavaScript</p>
+                </div>
+                <div class="skills-box__group">
+                    <img src="img/framework.png" alt="Framework icon" class="skills-box__illustration u-margin-bottom-small">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Frameworks</h3>
+                    <p class="skills-box__skill">BootStrap</p>
+                </div>
+                <div class="skills-box__group">
+                    <img src="img/tools.png" alt="Tools icon" class="skills-box__illustration u-margin-bottom-small">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Tools</h3>
+                    <p class="skills-box__skill">Git / GitHub</p>
+                    <p class="skills-box__skill">npm</p>
+                </div>
             </div>
         </section>
     </main>
