@@ -1,6 +1,10 @@
 .skills-box {
     text-align: center;
 
+    &__illustration {
+        width: 12rem;
+    }
+    
     &__group {
         display: inline-block;
         vertical-align: top;
