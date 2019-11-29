@@ -7,7 +7,7 @@
         text-align: center;
         border-radius: 1rem;
         text-decoration: none;
-        @include box-shadow-layered;
+        @include box-shadow;
         transition: all .2s;
 
         //changes for <button> element:
@@ -15,7 +15,10 @@
         cursor: pointer;
     }
 
-    &:active{ @include press-in; }
+    &:active{ 
+        @include press-in;
+        @include box-shadow-small;
+    }
 
     &--transparent {
         &,
