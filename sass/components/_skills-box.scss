@@ -4,7 +4,7 @@
     &__illustration {
         width: 12rem;
     }
-    
+
     &__group {
         display: inline-block;
         vertical-align: top;
@@ -26,6 +26,14 @@
 
     &__skill {
         display: inline-block;
-        margin-left: 2rem;
+        width: 45%;
+        &--icon {
+            margin-right: 1rem;
+            font-size: 2.5rem;
+        }
+        &--text {
+            font-size: 1.4rem;
+            vertical-align: top;
+        }
     }
 }
