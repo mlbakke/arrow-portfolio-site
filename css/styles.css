@@ -26,14 +26,42 @@ body {
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif; }
 
+.heading-primary {
+  font-size: 6rem;
+  letter-spacing: .5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+  .heading-primary::after {
+    content: "";
+    display: block;
+    width: 140%;
+    border-bottom: 3px solid rgba(255, 139, 0, 0.7);
+    border-radius: 50%;
+    transform: translate(-15%, 4rem); }
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    opacity: .5;
+    transform: scale(1.05); }
+  .heading-secondary--dark {
+    color: #030b1a; }
+  .heading-secondary::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-radius: 2px;
+    border-bottom: 2px solid #030b1a; }
+
 .navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
   font-family: 'Fredericka the Great', cursive;
   font-size: 2rem;
   text-transform: uppercase; }
-
-.heading-primary {
-  font-size: 7rem;
-  letter-spacing: .5rem; }
 
 .btn {
   font-size: 1.7rem;
@@ -111,9 +139,11 @@ h1, h2, h3 {
     .skills-box__group:hover {
       transform: scale(1.05);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1); }
-  .skills-box__skill {
-    display: inline-block;
-    margin-left: 2rem; }
+  .skills-box__skill--icon {
+    margin-right: 1rem;
+    font-size: 2.5rem; }
+  .skills-box__skill--text {
+    font-size: 1.4rem; }
 
 .header {
   background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding.jpg);
@@ -124,15 +154,6 @@ h1, h2, h3 {
   height: 60vh;
   color: #eaf7fd;
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0); }
-  .header__heading-logo {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4); }
-    .header__heading-logo::after {
-      content: "";
-      display: block;
-      width: 140%;
-      border-bottom: 3px solid rgba(255, 139, 0, 0.7);
-      border-radius: 50%;
-      transform: translate(-15%, 4rem); }
   .header__intro {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4); }
   .header__text-box {
