@@ -25,15 +25,12 @@
     }
 
     &__skill {
-        display: inline-block;
-        width: 45%;
         &--icon {
             margin-right: 1rem;
             font-size: 2.5rem;
         }
         &--text {
             font-size: 1.4rem;
-            vertical-align: top;
         }
     }
 }
