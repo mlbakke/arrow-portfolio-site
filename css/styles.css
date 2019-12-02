@@ -47,16 +47,21 @@ h1, h2, h3 {
   .heading-secondary:hover {
     opacity: .5;
     transform: scale(1.05); }
-  .heading-secondary--dark {
-    color: #030b1a; }
   .heading-secondary::after {
     content: "";
     display: block;
     width: 4rem;
     margin: 0 auto;
     padding-bottom: 1rem;
-    border-radius: 2px;
-    border-bottom: 2px solid #030b1a; }
+    border-radius: 2px; }
+  .heading-secondary--dark {
+    color: #030b1a; }
+    .heading-secondary--dark::after {
+      border-bottom: 2px solid #030b1a; }
+  .heading-secondary--light {
+    color: #eaf7fd; }
+    .heading-secondary--light::after {
+      border-bottom: 2px solid #eaf7fd; }
 
 .navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
   font-family: 'Fredericka the Great', cursive;
@@ -193,3 +198,11 @@ h1, h2, h3 {
   background-color: #f5f5f5;
   padding: 22rem 5%;
   margin-top: -15vh; }
+
+.section-portfolio {
+  background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/sai-kiran-anagani-code.jpg);
+  margin-top: -19rem;
+  padding: 20rem 5%;
+  background-size: cover;
+  clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+  height: 70vh; }

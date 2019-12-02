@@ -34,10 +34,6 @@ h1, h2, h3 {
         transform: scale(1.05);
     }
 
-    &--dark {
-        color: $color-text-dark;
-    }
-
     &::after {
         content: "";
         display: block;
@@ -45,7 +41,22 @@ h1, h2, h3 {
         margin: 0 auto;
         padding-bottom: 1rem;
         border-radius: 2px;
-        border-bottom: 2px solid $color-text-dark;
+    }
+    
+    &--dark {
+        color: $color-text-dark;
+
+        &::after {
+            border-bottom: 2px solid $color-text-dark;
+        }
+    }
+
+    &--light {
+        color: $color-text-light;
+
+        &::after {
+            border-bottom: 2px solid $color-text-light;
+        }
     }
 }
 // COMPONENTS AND LAYOUT-SPECIFIC

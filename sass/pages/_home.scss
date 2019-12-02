@@ -3,3 +3,14 @@
     padding: 22rem 5%;
     margin-top: -15vh;
 }
+
+.section-portfolio {
+    background-image: linear-gradient(
+        to right top, rgba($color-overlay, .6), rgba($color-overlay, .9)),
+        url(../../img/sai-kiran-anagani-code.jpg);
+    margin-top: -19rem;
+    padding: 20rem 5%;
+    background-size: cover;
+    @include arrow-shape-top;
+    height: 70vh;
+}
