@@ -1,6 +1,6 @@
 .section-skills {
     background-color: $color-white;
-    padding: 22rem 5%;
+    padding: 15vh 5%;
     margin-top: -15vh;
 }
 
@@ -8,8 +8,8 @@
     background-image: linear-gradient(
         to right top, rgba($color-overlay, .6), rgba($color-overlay, .9)),
         url(../../img/sai-kiran-anagani-code.jpg);
-    margin-top: -19rem;
-    padding: 20rem 5%;
+    margin-top: -15vh;
+    padding: 15vh 5%;
     background-size: cover;
     @include arrow-shape-top;
     height: 70vh;
