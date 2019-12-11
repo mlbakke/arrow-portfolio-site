@@ -151,7 +151,7 @@ h1, h2, h3 {
     font-size: 1.4rem; }
 
 .header {
-  background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding.jpg);
+  background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding-1k.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -159,6 +159,12 @@ h1, h2, h3 {
   height: 60vh;
   color: #eaf7fd;
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0); }
+  @media (min-resolution: 192dpi) and (min-width: 31.25em), (min-width: 62.5em) {
+    .header {
+      background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding-2k.jpg); } }
+  @media (min-resolution: 192dpi) and (min-width: 62.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding-3-5k.jpg); } }
   .header__intro {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4); }
   .header__text-box {
@@ -200,9 +206,15 @@ h1, h2, h3 {
   margin-top: -15vh; }
 
 .section-portfolio {
-  background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/sai-kiran-anagani-code.jpg);
+  background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/sai-kiran-anagani-code-1k.jpg);
   margin-top: -15vh;
   padding: 15vh 5%;
   background-size: cover;
   clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
   height: 70vh; }
+  @media (min-resolution: 192dpi) and (min-width: 31.25em), (min-width: 62.5em) {
+    .section-portfolio {
+      background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/sai-kiran-anagani-code-2k.jpg); } }
+  @media (min-resolution: 192dpi) and (min-width: 62.5em), (min-width: 125em) {
+    .section-portfolio {
+      background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/sai-kiran-anagani-code-4k.jpg); } }

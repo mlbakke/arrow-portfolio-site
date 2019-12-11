@@ -1,7 +1,7 @@
 .header {
     background-image: linear-gradient(
         to right top, rgba($color-overlay, .6), rgba($color-overlay, .9)),
-        url(../../img/computers-coding.jpg);
+        url(../../img/computers-coding-1k.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -10,6 +10,21 @@
     color: $color-text-light;
     @include arrow-shape-bottom;
 
+    //for 2x screen 500px or 1k pixel width or larger
+    @media (min-resolution: 192dpi) and (min-width: 31.25em),
+		(min-width: 62.5em) {
+            background-image: linear-gradient(
+                to right top, rgba($color-overlay, .6), rgba($color-overlay, .9)),
+                url(../../img/computers-coding-2k.jpg);
+    }
+    //for 2x screen 100px or 2k pixel width or larger
+    @media (min-resolution: 192dpi) and (min-width: 62.5em),
+		(min-width: 125em) {
+            background-image: linear-gradient(
+                to right top, rgba($color-overlay, .6), rgba($color-overlay, .9)),
+                url(../../img/computers-coding-3-5k.jpg);
+    }
+    
     &__intro {
         text-shadow: 
             0 1px 1px rgba($color-black, .4),
