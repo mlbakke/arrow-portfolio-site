@@ -1,23 +1,29 @@
 .navigation {
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     &__logo-box {
+        margin-left: 2rem;
         &,
         &:link,
         &:visited {
-            display: inline-block;
-            position: absolute;
-            left: 3%;
-            top: 0;
             color: rgba($color-text-light, .8);
             @include hover-color-details;
         }
     }
 
-    &__nav { text-align: right; }
+    &__list { 
+        display: flex;
+        width: 40rem;
+        justify-content: space-evenly;
+        
+    }
 
     &__item {
-        display: inline-block;
-        margin-right: 3%;
-        margin-top: 2rem;
+        list-style: none;
     }
     
     &__link {
@@ -25,8 +31,6 @@
         &:link,
         &:visited {
             color: rgba($color-text-light, .8);
-            list-style: none;
-            text-decoration: none;
             text-shadow: 0 1px 1px rgba($color-black, .1);
             transition: all .2s;
         }

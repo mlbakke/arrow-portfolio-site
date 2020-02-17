@@ -16,13 +16,13 @@
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/d769e5e148.js" crossorigin="anonymous"></script>
     <!--own css-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header" id="top">
         <div class="navigation">
-            <a href="#top" class="navigation__logo-box u-margin-top-small">mlb</a>
+            <a href="#top" class="navigation__logo-box">mlb</a>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
@@ -42,14 +42,16 @@
         </div>
 
         <div class="header__text-box">
-            <h1 class="header__heading-logo heading-primary u-margin-bottom-big u-margin-top-big">Martin Bakke</h1>
-            <p class="header__intro u-margin-bottom-med">
+            <h1 class="header__heading-logo heading-primary">Martin Bakke</h1>
+            <p class="header__intro">
                 Frontend developer.
             </p>
-            <a href="https://github.com/mlbakke" class="btn btn--transparent btn--git">
-                <i class="fab fa-github"></i>GitHub</a> 
-            <a href="mailto: bakkemartin11@gmail.com" class="btn btn--transparent btn--mail">
-                <i class="fas fa-envelope"></i>Mail</a>
+            <div class="header__contact-links">
+                <a href="https://github.com/mlbakke" class="btn btn--transparent btn--git">
+                    <i class="fab fa-github"></i>GitHub</a> 
+                <a href="mailto: bakkemartin11@gmail.com" class="btn btn--transparent btn--mail">
+                    <i class="fas fa-envelope"></i>Mail</a>
+            </div>
         </div>
     </header>
 
@@ -58,56 +60,66 @@
             <h2 class="heading-secondary heading-secondary--dark u-center-text u-margin-top-big u-margin-bottom-med">Skills</h2>
             <div class="skills-box">
                 <div class="skills-box__group">
-                    <img src="img/programming.png" alt="Languages icon" class="skills-box__illustration">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Languages</h3>
+                    <div class="skills-box__head">
+                        <img src="img/programming.png" alt="Languages icon" class="skills-box__illustration">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Languages</h3>
+                    </div>
 
-                    <div class="skills-box__skill">
+                    <div class="skills-box__skill skills-box__skill--1">
                         <i class="fab fa-html5 skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">HTML5</span>
                     </div>
-                    <div class="skills-box__skill">
+                    <div class="skills-box__skill skills-box__skill--2">
                         <i class="fab fa-css3-alt skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">CSS3</span>
                     </div>
-                    <div class="skills-box__skill">
+                    <div class="skills-box__skill skills-box__skill--3">
                         <i class="fab fa-sass skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">Sass/SCSS</span>
                     </div>
-                    <div class="skills-box__skill">
+                    <div class="skills-box__skill skills-box__skill--4">
                         <i class="fab fa-js-square skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">JavaScript</span>
                     </div>
-                </div>
+                </div> <!--end of languages skills_box__group-->
+
                 <div class="skills-box__group">
-                    <img src="img/framework.png" alt="Framework icon" class="skills-box__illustration">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Frameworks</h3>
+                    <div class="skills-box__head">
+                        <img src="img/framework.png" alt="Framework icon" class="skills-box__illustration">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Frameworks</h3>
+                    </div>
                     
-                    <div class="skills-box__skill">
+                    <div class="skills-box__skill skills-box__skill--1">
                         <i class="fab fa-bootstrap skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">BootStrap</span>
                     </div>
-                </div>
+                </div> <!--end of frameworks skills_box__group-->
 
                 <div class="skills-box__group">
-                    <img src="img/tools.png" alt="Tools icon" class="skills-box__illustration">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Tools</h3>
-                    <div class="skills-box__skill">
+                    <div class="skills-box__head">
+                        <img src="img/tools.png" alt="Tools icon" class="skills-box__illustration">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Tools</h3>
+                    </div>
+
+                    <div class="skills-box__skill skills-box__skill--1">
                         <i class="fab fa-git skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">Git/GitHub</span>
                     </div>
-                    <div class="skills-box__skill">
+                    <div class="skills-box__skill skills-box__skill--2">
                         <i class="fab fa-npm skills-box__skill--icon"></i>
                         <span class="skills-box__skill--text">npm</span>
                     </div>
-                </div>
+                </div> <!--end of tools skills_box__group-->
             </div>
-        </section>
+        </section> <!--End of skills sections-->
 
         <section class="section-portfolio" id="portfolio">
             <h2 class="heading-secondary heading-secondary--light u-center-text u-margin-top-big">Portfolio</h2>
-        </section>
+        </section> <!--End of portfolio section-->
 
-        <section class="section-about" id="about"></section>
+        <section class="section-about" id="about">
+
+        </section> <!--End of about section-->
     </main>
 
     <footer class="footer"></footer>

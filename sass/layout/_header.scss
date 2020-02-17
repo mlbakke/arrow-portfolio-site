@@ -6,9 +6,13 @@
     background-position: center;
     position: relative;
     text-align: center;
-    height: 60vh;
+    height: 90vh;
     color: $color-text-light;
     @include arrow-shape-bottom;
+
+    display: grid;
+    grid-template-rows: [start-nav] 8rem [end-nav start-head] 1fr [end-head];
+    grid-template-columns: 1fr max-content 1fr;
 
     //for 2x screen 500px or 1k pixel width or larger
     @media (min-resolution: 192dpi) and (min-width: 31.25em),
@@ -27,16 +31,32 @@
                 url(../../img/computers-coding-3-5k.jpg);
     }
     
+    &__text-box {
+        grid-row: start-head / end-head;
+        grid-column: 2 / 3;
+
+        display: grid;
+        grid-template-columns: 1fr [start-content] max-content [end-content] 1fr;
+        grid-template-rows: 1fr [start-heading] max-content [end-heading] 10rem [start-intro] max-content [end-intro] 8rem [start-links] max-content [end-links] 3fr;
+    }
+
+    &__heading-logo {
+        grid-column: start-content / end-content;
+        grid-row: start-heading / end-heading;
+    }
     &__intro {
+        grid-column: start-content / end-content;
+        grid-row: start-intro / end-intro;
         text-shadow: 
             0 1px 1px rgba($color-black, .4),
             0 2px 2px rgba($color-black, .4);
     }
+    &__contact-links {
+        grid-column: start-content / end-content;
+        grid-row: start-links / end-links;
 
-    &__text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-around;
     }
+
 }

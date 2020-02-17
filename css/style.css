@@ -120,35 +120,65 @@ h1, h2, h3 {
 .btn--transparent:hover {
   color: #ff8b00; }
 
-.btn--git {
-  margin-right: 7rem; }
-
 .btn > i {
   font-size: 2rem;
   margin-right: .8rem; }
 
 .skills-box {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly; }
+  @media only screen and (max-width: 50em) {
+    .skills-box {
+      flex-direction: column; } }
   .skills-box__illustration {
     width: 12rem; }
+    @media only screen and (max-width: 50em) {
+      .skills-box__illustration {
+        width: 8rem; } }
   .skills-box__group {
-    display: inline-block;
-    vertical-align: top;
-    width: 25%;
-    padding: 2rem 3rem;
+    min-width: 20%;
+    padding: 2rem 5rem;
     border-radius: 4px;
     transition: all .2s;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1); }
-    .skills-box__group:not(:last-of-type) {
-      margin-right: 2%; }
     .skills-box__group:hover {
       transform: scale(1.05);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1); }
-  .skills-box__skill--icon {
-    margin-right: 1rem;
-    font-size: 2.5rem; }
-  .skills-box__skill--text {
-    font-size: 1.4rem; }
+    @media only screen and (max-width: 50em) {
+      .skills-box__group {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr max-content 1fr;
+        grid-template-rows: repeat(3, max-content);
+        align-items: center;
+        align-self: center;
+        margin-bottom: 4rem;
+        width: 40rem; } }
+  @media only screen and (max-width: 50em) {
+    .skills-box__head {
+      grid-column: 2 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 4rem; } }
+  .skills-box__skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .skills-box__skill--icon {
+      margin-right: 1rem;
+      font-size: 2.5rem; }
+    .skills-box__skill--text {
+      font-size: 1.4rem; }
+    @media only screen and (max-width: 50em) {
+      .skills-box__skill--1 {
+        grid-column: 2 / 3; }
+      .skills-box__skill--2 {
+        grid-column: 4 / 5; }
+      .skills-box__skill--3 {
+        grid-column: 2 / 3; }
+      .skills-box__skill--4 {
+        grid-column: 4 / 5; } }
 
 .header {
   background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding-1k.jpg);
@@ -156,49 +186,60 @@ h1, h2, h3 {
   background-position: center;
   position: relative;
   text-align: center;
-  height: 60vh;
+  height: 90vh;
   color: #eaf7fd;
-  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0); }
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+  display: grid;
+  grid-template-rows: [start-nav] 8rem [end-nav start-head] 1fr [end-head];
+  grid-template-columns: 1fr max-content 1fr; }
   @media (min-resolution: 192dpi) and (min-width: 31.25em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 31.25em), (min-width: 62.5em) {
     .header {
       background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding-2k.jpg); } }
   @media (min-resolution: 192dpi) and (min-width: 62.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 62.5em), (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/computers-coding-3-5k.jpg); } }
-  .header__intro {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4); }
   .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    grid-row: start-head / end-head;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr [start-content] max-content [end-content] 1fr;
+    grid-template-rows: 1fr [start-heading] max-content [end-heading] 10rem [start-intro] max-content [end-intro] 8rem [start-links] max-content [end-links] 3fr; }
+  .header__heading-logo {
+    grid-column: start-content / end-content;
+    grid-row: start-heading / end-heading; }
+  .header__intro {
+    grid-column: start-content / end-content;
+    grid-row: start-intro / end-intro;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 2px 2px rgba(0, 0, 0, 0.4); }
+  .header__contact-links {
+    grid-column: start-content / end-content;
+    grid-row: start-links / end-links;
+    display: flex;
+    justify-content: space-around; }
 
-.navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
-  display: inline-block;
-  position: absolute;
-  left: 3%;
-  top: 0;
-  color: rgba(234, 247, 253, 0.8); }
-  .navigation__logo-box:hover, .navigation__logo-box:link:hover, .navigation__logo-box:visited:hover {
+.navigation {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navigation__logo-box {
+    margin-left: 2rem; }
+    .navigation__logo-box, .navigation__logo-box:link, .navigation__logo-box:visited {
+      color: rgba(234, 247, 253, 0.8); }
+      .navigation__logo-box:hover, .navigation__logo-box:link:hover, .navigation__logo-box:visited:hover {
+        color: #ff8b00; }
+  .navigation__list {
+    display: flex;
+    width: 40rem;
+    justify-content: space-evenly; }
+  .navigation__item {
+    list-style: none; }
+  .navigation__link, .navigation__link:link, .navigation__link:visited {
+    color: rgba(234, 247, 253, 0.8);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all .2s; }
+  .navigation__link:hover {
     color: #ff8b00; }
-
-.navigation__nav {
-  text-align: right; }
-
-.navigation__item {
-  display: inline-block;
-  margin-right: 3%;
-  margin-top: 2rem; }
-
-.navigation__link, .navigation__link:link, .navigation__link:visited {
-  color: rgba(234, 247, 253, 0.8);
-  list-style: none;
-  text-decoration: none;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  transition: all .2s; }
-
-.navigation__link:hover {
-  color: #ff8b00; }
 
 .section-skills {
   background-color: #f5f5f5;
@@ -211,7 +252,7 @@ h1, h2, h3 {
   padding: 15vh 5%;
   background-size: cover;
   clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
-  height: 70vh; }
+  height: 90vh; }
   @media (min-resolution: 192dpi) and (min-width: 31.25em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 31.25em), (min-width: 62.5em) {
     .section-portfolio {
       background-image: linear-gradient(to right top, rgba(3, 37, 53, 0.6), rgba(3, 37, 53, 0.9)), url(../../img/sai-kiran-anagani-code-2k.jpg); } }
