@@ -12,7 +12,9 @@
     padding: 15vh 5%;
     background-size: cover;
     @include arrow-shape-top;
-    height: 70vh;
+
+    //temporary
+    height: 90vh;
 
     //for 2x screen 500px or 1k pixel width or larger
     @media (min-resolution: 192dpi) and (min-width: 31.25em),
